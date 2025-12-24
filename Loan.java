@@ -1,10 +1,17 @@
 public class Loan {
+    private boolean available = true;
+
     public void borrowBook() {
-        System.out.println("Borrowed");
+        if (available) {
+            available = false;
+            System.out.println("Book borrowed successfully");
+        } else {
+            System.out.println("Book is not available");
+        }
     }
 
     public void returnBook() {
-        System.out.println("Returned");
+        available = true;
+        System.out.println("Book returned successfully");
     }
-
 }
