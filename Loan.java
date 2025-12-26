@@ -5,6 +5,7 @@ public class Loan {
 
     public void returnBook() {
         System.out.println("Returned");
+        system.out.println("loan record updated");
     }
 
 }
