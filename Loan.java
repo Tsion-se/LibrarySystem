@@ -6,5 +6,7 @@ public class Loan {
     public void returnBook() {
         System.out.println("Returned");
     }
-
+ public int getloandays(){
+    return loandays;
+ }
 }
